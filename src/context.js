@@ -44,11 +44,13 @@ export class UserProvider extends Component {
       this.setState((state) => reducer(state, action));
     },
   };
+
   render() {
     return (
       <UserContext.Provider value={this.state}>
         {this.props.children}
       </UserContext.Provider>
+      
     );
   }
 }

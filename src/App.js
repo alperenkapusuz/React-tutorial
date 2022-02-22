@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Users from "./components/Users";
 import Navbar from "./components/Navbar";
+import AddUser from "./components/AddUser";
 
 class App extends Component {
   // state = {
@@ -32,6 +33,7 @@ class App extends Component {
       <div className="container">
         <Navbar title="User App" />
         <hr />
+        <AddUser/>
         <Users />
       </div>
     );

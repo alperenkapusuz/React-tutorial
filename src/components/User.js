@@ -32,7 +32,7 @@ class User extends Component {
   };
 
   onDeleteUser = (dispatch, e) => {
-    const  id  = this.props;
+    const {id} = this.props;
     //Consumer Dispatch
     dispatch({ type: "DELETE_USER", payload: id });
   };
